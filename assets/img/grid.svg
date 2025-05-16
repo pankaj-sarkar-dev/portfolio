@@ -1,0 +1,22 @@
+<svg width="212" height="212" viewBox="0 0 212 212" xmlns="http://www.w3.org/2000/svg">
+  <!-- Each cell is 50x50 with 3px gaps -->
+  <rect x="0" y="0" width="50" height="50" fill="#1F1F1F" />
+  <rect x="53" y="0" width="50" height="50" fill="#1F1F1F" />
+  <rect x="106" y="0" width="50" height="50" fill="#1F1F1F" />
+  <rect x="159" y="0" width="50" height="50" fill="#1F1F1F" />
+
+  <rect x="0" y="53" width="50" height="50" fill="#1F1F1F" />
+  <rect x="53" y="53" width="50" height="50" fill="#1F1F1F" />
+  <rect x="106" y="53" width="50" height="50" fill="#1F1F1F" />
+  <rect x="159" y="53" width="50" height="50" fill="#1F1F1F" />
+
+  <rect x="0" y="106" width="50" height="50" fill="#1F1F1F" />
+  <rect x="53" y="106" width="50" height="50" fill="#1F1F1F" />
+  <rect x="106" y="106" width="50" height="50" fill="#1F1F1F" />
+  <rect x="159" y="106" width="50" height="50" fill="#1F1F1F" />
+
+  <rect x="0" y="159" width="50" height="50" fill="#1F1F1F" />
+  <rect x="53" y="159" width="50" height="50" fill="#1F1F1F" />
+  <rect x="106" y="159" width="50" height="50" fill="#1F1F1F" />
+  <rect x="159" y="159" width="50" height="50" fill="#1F1F1F" />
+</svg>

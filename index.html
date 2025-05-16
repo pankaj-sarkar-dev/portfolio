@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pankaj Sarkar</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-  <h1>This is my portfolio</h1>
 
+<body>
+  <div class="header">
+    <div class="vignette"></div>
+    <section id="hex-grid">
+      <div class="light">
+      </div>
+      <div class="grid"></div>
+    </section>
+  </div>
+  <section class="content py-20 px-8 md:px-20 lg:px-48">
+    <div class="grid grid-cols-3 gap-4">
+      <div class="col-span-3 xl:col-span-2">
+        <div class="relative h-10 overflow-hidden">
+          <div class="animate-snapText flex flex-col">
+            <span class="h-10 flex items-center justify-start hello">Hello,</span>
+            <span class="h-10 flex items-center justify-start hello">नमस्ते,</span>
+            <span class="h-10 flex items-center justify-start hello">নমস্কার</span>
+            <span class="h-10 flex items-center justify-start hello">नमस्कारम्</span>
+          </div>
+        </div>
+        <h2 class="about-heading text-[3rem] tracking-widest md:text-[5rem]">I am Pankaj</h2>
+        <div class="profile my-10 xl:hidden">
+          <div class="pic">
+            <img src="./assets/img/me.jpg" alt="me"  />
+          </div>
+        </div>
+        <p class="text-color text-lg">I am a passionate Software Developer with over 5 years of experience building
+          scalable, performance-optimized applications across web and mobile platforms. I specialize in React, Next.js,
+          React Native, and backend technologies like Node.js, Express, and Fastify.
+          <br><br>
+
+          My journey began with a love for clean code and efficient problem-solving. Over the years, I’ve engineered
+          everything from complex marketing automation platforms to interactive data modeling tools and high-end
+          e-commerce websites. I enjoy transforming complex requirements into user-friendly digital solutions that
+          deliver real impact.
+          <br><br>
+
+          What sets me apart is my ability to bridge design and functionality — whether it’s crafting a seamless UI for
+          a luxury brand or optimizing real-time communication in large-scale applications. I’m always exploring new
+          technologies and pushing the boundaries of what’s possible in the frontend and full-stack space.
+<br><br>
+          When I’m not coding, I love experimenting with data visualizations (D3.js), building immersive experiences
+          with Three.js, adding smooth interactions using Framer Motion, and crafting high-performance mobile animations
+          with React Native Reanimated. I’m driven by a desire to make tech feel more human, dynamic, and engaging —
+          whether it’s through visual storytelling, motion, or intuitive user interfaces.</p>
+      </div>
+      <div class="hidden col-span-3 xl:flex justify-end items-center xl:col-span-1">
+        <div class="profile">
+          <div class="pic">
+            <img src="./assets//img//me.jpg" alt="" me />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="content py-20 px-8 md:px-20 lg:px-48">
+    <h2 class="about-heading mb-10 text-[2rem] tracking-widest md:text-[3rem]">My works -</h2>
+    <div id="cards" class="grid grid-cols-1 gap-4 md:grid-cols-2  xl:grid-cols-4">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="./assets/img//projects//upgrade-1.png" alt="upgrade-1" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-duotone fa-apartment"></i>
+              <div class="card-info-title">
+                <h3>Apartments</h3>  
+                <h4>Places to be apart. Wait, what?</h4>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="./assets/img//projects//magrabi-1.png" alt="magrabi-1" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-duotone fa-unicorn"></i>
+              <div class="card-info-title">
+                <h3>Unicorns</h3>  
+                <h4>A single corn. Er, I mean horn.</h4>
+              </div>    
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="./assets/img//projects//jettwings-1.png" alt="jettwings-1" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-duotone fa-blender-phone"></i>
+              <div class="card-info-title">
+                <h3>Blender Phones</h3>  
+                <h4>These absolutely deserve to exist.</h4>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-duotone fa-person-to-portal"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-duotone fa-person-to-portal"></i>
+              <div class="card-info-title">
+                <h3>Adios</h3>  
+                <h4>See you...</h4>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-duotone fa-person-from-portal"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-duotone fa-person-from-portal"></i>
+              <div class="card-info-title">
+                <h3>I mean hello</h3>  
+                <h4>...over here.</h4>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-duotone fa-otter"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-duotone fa-otter"></i>
+              <div class="card-info-title">
+                <h3>Otters</h3>  
+                <h4>Look at me, imma cute lil fella.</h4>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="./app.js"></script>
+
 </html>
