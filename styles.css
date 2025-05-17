@@ -255,6 +255,13 @@ body {
 .button-wrapper {
   position: relative;
   display: inline-block;
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .button-wrapper {
+    overflow: hidden;
+  }
 }
 
 .button-wrapper .back-glow {
@@ -349,10 +356,11 @@ body {
   margin: 0 auto;
   padding: 2em;
   width: 20rem;
-  height: 20rem;
+  aspect-ratio: 1 / 1;
   text-align: center;
   border-radius: 50%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .profile .pic {
