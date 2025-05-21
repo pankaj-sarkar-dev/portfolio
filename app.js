@@ -99,3 +99,7 @@ const text = marqueeTrack.children[0].outerHTML;
 while (marqueeTrack.scrollWidth < marqueeTrack.parentElement.offsetWidth * 2) {
   marqueeTrack.insertAdjacentHTML("beforeend", text);
 }
+
+// Cards
+const elements = document.querySelectorAll(".card");
+VanillaTilt.init(elements);
