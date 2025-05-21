@@ -46,12 +46,37 @@
             <div class="back-glow"></div>
             <button class="glow-button" data-target="#about">
               <span class="glow"></span>
-              <span class="text">ABOUT ME</span>
+              <span class="text">KNOW MORE</span>
             </button>
           </div>
         </div>
       </section>
       <div class="bottom-fade"></div>
+      <!-- <div class="circular-text">
+        <svg viewBox="0 0 200 200" width="200" height="200">
+          <defs>
+            <path
+              id="circlePath"
+              d="M 100, 100
+                 m -75, 0
+                 a 75,75 0 1,1 150,0
+                 a 75,75 0 1,1 -150,0"
+            />
+          </defs>
+
+          <text
+            fill="#ff990a"
+            font-size="14"
+            font-weight="bold"
+            textLength="471"
+            lengthAdjust="spacing"
+          >
+            <textPath href="#circlePath">
+              &nbsp; ● CONTACT ME ● CONTACT ME
+            </textPath>
+          </text>
+        </svg>
+      </div> -->
       <div class="marquee-container">
         <div class="marquee-track" id="marquee-track">
           <span class="marquee-text">
@@ -114,7 +139,7 @@
               <img src="./assets/img/me.jpg" alt="me" />
             </div>
           </div>
-          <p class="text-color text-lg text-justify xl:text-left">
+          <p class="text-color text-md text-justify xl:text-left">
             I am a passionate Software Developer with over 5 years of experience
             building scalable, performance-optimized applications across web and
             mobile platforms. I specialize in React, Next.js, React Native, and
@@ -281,14 +306,102 @@
       >
         Where I’ve Been
       </h2>
+      <div>
+        <h4
+          class="text-color-secondary text-xl tracking-wider text-left normal-case m-0"
+        >
+          TechVariable Pvt. Lts.
+          <span class="text-sm italic">(Guwahati)</span>
+        </h4>
+        <span class="text-sm text-color italic">Software Developer, </span>
+        <span class="text-sm text-color italic">Aug 2021 - Present</span>
+        <p class="text-md text-color mt-4">
+          Worked with companies like Zuora, B2Brain, and Jumbaya as a private
+          contractor, building scalable products from marketing platforms to
+          data pipeline builders. Focused on performance, real-time analytics,
+          and rich UI/UX using React, Next.js, React Native, D3.js, and Fastify.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <h4
+          class="text-color-secondary text-xl tracking-wider text-left normal-case m-0"
+        >
+          Borgos Technologies Pvt. Lts.
+          <span class="text-sm italic">(Guwahati)</span>
+        </h4>
+        <span class="text-sm text-color italic">Software Developer, </span>
+        <span class="text-sm text-color italic">Dec 2019 - July 2021</span>
+        <p class="text-md text-color mt-4">
+          At Borgos Technologies, developed scalable front-end systems for video
+          conferencing, e-learning, and B2B sales platforms using React, React
+          Native, and AWS Chime. Focused on real-time features, interactive UI,
+          and performance-driven design for both web and mobile.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <h4
+          class="text-color-secondary text-xl tracking-wider text-left normal-case m-0"
+        >
+          Xipaar Solutions Pvt. Lts.
+          <span class="text-sm italic">(Guwahati)</span>
+        </h4>
+        <span class="text-sm text-color italic"
+          >Software Developer Intern,
+        </span>
+        <span class="text-sm text-color italic">June 2019 - Nov 2019</span>
+        <p class="text-md text-color mt-4">
+          As a Software Developer Intern at XiPaar Solutions, contributed to a
+          next-gen e-commerce platform by integrating a 3D virtual try-on using
+          Three.js, enabling personalized avatars and 360° product
+          visualization.
+        </p>
+      </div>
     </section>
 
     <section class="content py-20 px-8 md:px-20 lg:px-48">
       <h2
-        class="about-heading mb-10 text-[2rem] tracking-widest md:text-[3rem]"
+        class="about-heading mb-16 text-[2rem] tracking-widest md:text-[3rem]"
       >
         More of What I've Been up to
       </h2>
+
+      <!-- Swiper -->
+      <swiper-container
+        autoplay="true"
+        loop="true"
+        class="mySwiper"
+        pagination="false"
+        effect="coverflow"
+        grab-cursor="true"
+        centered-slides="true"
+        slides-per-view="auto"
+        coverflow-effect-rotate="50"
+        coverflow-effect-stretch="0"
+        coverflow-effect-depth="100"
+        coverflow-effect-modifier="1"
+        coverflow-effect-slide-shadows="true"
+      >
+        <swiper-slide>
+          <img src="./assets/img/gallary/4.JPG" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/gallary/6.JPG" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/gallary/7.JPG" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/gallary/8.JPG" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/gallary/9.JPG" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/gallary/11.jpg" />
+        </swiper-slide>
+      </swiper-container>
     </section>
 
     <section class="content py-20 px-8 md:px-20 lg:px-48">
@@ -307,6 +420,7 @@
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

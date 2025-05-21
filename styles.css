@@ -28,6 +28,20 @@ body {
   color: rgb(255, 253, 231);
 }
 
+.text-color-secondary {
+  background-image: linear-gradient(
+    0deg,
+    rgb(41, 41, 39) 7.000000000000001%,
+    #d5510d,
+    #d5510d 69%,
+    #d5510d,
+    #d5510d 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .header {
   background-color: #2b2b2b;
   display: flex;
@@ -53,6 +67,16 @@ body {
   z-index: 5;
 }
 
+@media (max-width: 768px) {
+  .vignette {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(10, 10, 10, 0.1) 40%,
+      rgba(10, 10, 10, 1) 100%
+    );
+  }
+}
+
 .bottom-fade {
   position: absolute;
   bottom: 0;
@@ -73,7 +97,6 @@ body {
 
 #hex-grid {
   height: 100vh;
-  /* background-color: #000; */
 }
 
 #hex-grid::after {
@@ -311,8 +334,27 @@ body {
   transition: left 0.1s ease;
   z-index: -1;
   filter: blur(12px);
-  transition: all 0.1s ease;
 }
+
+/* .circular-text {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9;
+}
+
+.circular-text svg {
+  animation: text-spin 10s linear infinite;
+}
+
+@keyframes text-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
 
 .marquee-container {
   width: 100%;
@@ -565,4 +607,24 @@ body {
 .card .card-content .card-image img {
   height: 100%;
   object-fit: cover;
+}
+
+/* Carousel */
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  overflow-y: hidden;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
 }
