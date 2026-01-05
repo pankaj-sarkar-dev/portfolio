@@ -1,3 +1,4 @@
+// ---------- banner mouse move start ----------
 const light = document.querySelector(".light");
 const grid = document.querySelector("#hex-grid");
 
@@ -19,17 +20,18 @@ grid.addEventListener("mouseenter", () => {
 window.addEventListener("scroll", () => {
   light.style.opacity = 0;
 });
+// ---------- banner mouse move end ----------
 
-document.getElementById("cards").onmousemove = (e) => {
-  for (const card of document.getElementsByClassName("card")) {
-    const rect = card.getBoundingClientRect(),
-      x = e.clientX - rect.left,
-      y = e.clientY - rect.top;
+// document.getElementById("cards").onmousemove = (e) => {
+//   for (const card of document.getElementsByClassName("card")) {
+//     const rect = card.getBoundingClientRect(),
+//       x = e.clientX - rect.left,
+//       y = e.clientY - rect.top;
 
-    card.style.setProperty("--mouse-x", `${x}px`);
-    card.style.setProperty("--mouse-y", `${y}px`);
-  }
-};
+//     card.style.setProperty("--mouse-x", `${x}px`);
+//     card.style.setProperty("--mouse-y", `${y}px`);
+//   }
+// };
 
 const texts = ["developer", "engineer"];
 
@@ -100,6 +102,16 @@ while (marqueeTrack.scrollWidth < marqueeTrack.parentElement.offsetWidth * 2) {
   marqueeTrack.insertAdjacentHTML("beforeend", text);
 }
 
-// Cards
-const elements = document.querySelectorAll(".card");
-VanillaTilt.init(elements);
+// Experience
+gsap.registerPlugin(ScrollTrigger);
+const contents = gsap.utils.toArray("#experience .experience-item");
+console.log({ contents });
+
+gsap.to(contents, {
+  xPercent: -100 * (contents.length - 1),
+  scrollTrigger: {
+    trigger: "#experience",
+    pin: true,
+    scrub: 1,
+  },
+});
