@@ -377,6 +377,40 @@
         Let’s Build Together
       </h2>
 
+      <div>
+        <form
+          id="contact-form"
+          class="flex flex-col gap-4 max-w-lg mx-auto p-4"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="p-3 rounded border"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="p-3 rounded border"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            class="p-3 rounded border h-32"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
       <div class="button-wrapper">
         <div class="back-glow"></div>
         <button class="glow-button">
@@ -394,5 +428,6 @@
     <script src="./project-card.js"></script>
     <script src="./app.js"></script>
     <script src="./photoScroller.js"></script>
+    <script src="./contact.js"></script>
   </body>
 </html>
