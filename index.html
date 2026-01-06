@@ -18,6 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -377,32 +384,62 @@
         Let’s Build Together
       </h2>
 
-      <div>
+      <p
+        id="response"
+        class="text-lg text-color font-normal italic my-4 hidden"
+      >
+        Your message is successfully sent.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
         <form
           id="contact-form"
-          class="flex flex-col gap-4 max-w-lg mx-auto p-4"
+          class="md:col-span-2 flex flex-col gap-4"
           method="post"
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            class="p-3 rounded border"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            class="p-3 rounded border"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            class="p-3 rounded border h-32"
-            required
-          ></textarea>
+          <div class="grid md:grid-cols-2 gap-3">
+            <div class="w-full">
+              <label for="name" class="text-color">Your Name *</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="p-3 w-full rounded border focus:outline-0"
+                required
+              />
+              <span id="error-name" class="text-xs text-red-300 hidden"
+                >please type your valid name.</span
+              >
+            </div>
+            <div>
+              <label for="mail" class="text-color">Your Email Id *</label>
+              <input
+                id="mail"
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="p-3 w-full rounded border focus:outline-0"
+                required
+              />
+              <span id="error-mail" class="text-xs text-red-300 hidden"
+                >please type your valid email id.</span
+              >
+            </div>
+          </div>
+          <div>
+            <label for="message" class="text-color">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              class="p-3 w-full rounded border h-32 focus:outline-0"
+              required
+            ></textarea>
+            <span id="error-message" class="text-xs text-red-300 hidden"
+              >please type your message.</span
+            >
+          </div>
           <!-- <button
             type="submit"
             class="bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition"
@@ -410,14 +447,98 @@
             Send Message
           </button> -->
         </form>
+
+        <!-- Conect with me on -->
+        <div class="connect-with-me hidden md:block">
+          <h6 class="text-color text-xl font-semibold italic">Elsewhere</h6>
+          <p class="text-color text-sm italic">You can also find me here</p>
+          <div class="flex flex-col gap-3 mt-3">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/pankaj-sarkar-dev/"
+              class="text-color"
+            >
+              <i class="fa-brands fa-linkedin text-lg"></i>
+              LinkedIn
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/pankaj-sarkar-dev"
+              class="text-color"
+            >
+              <i class="fa-brands fa-square-github text-lg"></i>
+              Github
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/bong_spirit_/"
+              class="text-color"
+            >
+              <i class="fa-brands fa-square-instagram text-lg"></i>
+              Instrgram
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/NightFox06"
+              class="text-color"
+            >
+              <i class="fa-brands fa-square-facebook text-lg"></i>
+              Facebook
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="button-wrapper">
-        <div class="back-glow"></div>
-        <button id="contact-button" class="glow-button">
-          <span class="glow"></span>
-          <span class="text">START NOW</span>
-        </button>
+      <div class="flex">
+        <div class="button-wrapper mt-4">
+          <div class="back-glow"></div>
+          <button id="contact-button" class="glow-button">
+            <span class="glow"></span>
+            <span class="text">START NOW</span>
+          </button>
+        </div>
+
+        <img
+          src="./assets//spinner.gif"
+          alt="spinner"
+          class="h-16 mt-3 hidden"
+          id="spinner"
+        />
+      </div>
+
+      <div class="connect-with-me mt-14 flex flex-col items-center md:hidden">
+        <h6 class="text-color text-xl font-semibold italic">Elsewhere</h6>
+        <p class="text-color text-sm italic">You can also find me here</p>
+        <div class="flex gap-3 mt-3">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/pankaj-sarkar-dev/"
+            class="text-color"
+          >
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/pankaj-sarkar-dev"
+            class="text-color"
+          >
+            <i class="fa-brands fa-square-github text-2xl"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/bong_spirit_/"
+            class="text-color"
+          >
+            <i class="fa-brands fa-square-instagram text-2xl"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/NightFox06"
+            class="text-color"
+          >
+            <i class="fa-brands fa-square-facebook text-2xl"></i>
+          </a>
+        </div>
       </div>
     </section>
 
